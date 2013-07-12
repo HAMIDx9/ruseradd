@@ -53,9 +53,9 @@ static void usage(const char *program)
 	fprintf(stderr, "#                                                                       #\n");
 	fprintf(stderr, "#                  Ashiyane Digital Security Team                       #\n");
 	fprintf(stderr, "#                        Ashiyane ROOT User add                         #\n");
-	fprintf(stderr, "#                            rUserAdd v0.2                             #\n");
+	fprintf(stderr, "#                            rUserAdd v0.2                              #\n");
 	fprintf(stderr, "#                 Thanks to Pr0grammer for his idea                     #\n");
-	fprintf(stderr, "#                             By  HAMIDx9                              #\n");
+	fprintf(stderr, "#                             By  HAMIDx9                               #\n");
 	fprintf(stderr, "#                                                                       #\n");
 	fprintf(stderr, "#########################################################################\n\n");
 	fprintf(stderr, " Usage[0]: %s -c user_name\t\t// check existance of a username\n",program);
