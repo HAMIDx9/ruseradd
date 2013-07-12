@@ -103,8 +103,8 @@ static void pwd_insert(char *name, char *password)
 	crypt_pw = crypt(password, "$6$ashiyane"); // calculating the encrypted hash according to SHA-512 and salt 'ashiyane'
 	
 	int rv = pwd_check(name);
-	if (rv)
-		exit(EXIT_FAILURE); // user does not exist so we must leave this program ;)
+	if (!rv)
+		exit(EXIT_FAILURE); // user exists so we must leave this program ;)
 	
 	FILE *file;
 	file = fopen("/etc/passwd","a");
