@@ -284,6 +284,12 @@ int main(int argc, char **argv)
 	char *password;
 	int opt,pflag=0;
 	
+	if (getuid() != 0 && getgid() != 0)
+	{
+		fprintf(stderr,"You must run rUserAdd as root, Exiting...\n");
+		exit(EXIT_FAILURE);
+	}
+
 	if (argc < 2)
 	{
 		usage(argv[0]);
